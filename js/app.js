@@ -8,7 +8,7 @@ $(document).ready(function(){
         if(newList == true){
             var theValue = $('#toDoItem').val();
             newListItem = '<li><span class="handle"><i class="fa fa-ellipsis-v" aria-hidden="true"></i> </span> <input class="listItem" value="' + theValue + '"><a class="removeListItem" style="display: none; color: #ff2f2f; cursor: pointer;" href="#"> <i class="fa fa-times" aria-hidden="true"></i> </a></li>';
-            newList = true;
+            newList = false;
         }else {
             var theValue = $('#toDoItem').val();
             newListItem = $('#theList li:last').clone();
