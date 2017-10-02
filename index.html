@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To-do List</title>
+
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,700&amp;subset=latin-ext" rel="stylesheet">
+    <!--My styles Css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+      <h1>To-do List</h1>
+       <form name="form1" action="post" method="">
+           <p><input type="text" name="toDoItem" id="toDoItem" autofocus>
+           <input type="button" name="addToDo" id="addToDo" value="Add List Item"></p>
+       </form>
+        <ul id="theList" class="sortable list" contenteditable>
+            
+        </ul>
+        <p>
+            <a href="javascript:void();" id="clearAll">Clear All</a>
+        </p>
+    </div>
+    
+    <!--JQuery Library-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+    <!-- JavaScript font-awsome -->
+	<script src="https://use.fontawesome.com/c13337a5fc.js"></script>
+    
+    <!--JavaScript Sortable-->
+    <script src="js/jquery.sortable.js"></script>
+    
+    <!--My Script-->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
