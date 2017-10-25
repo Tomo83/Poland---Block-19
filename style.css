@@ -1,0 +1,42 @@
+body {
+    background-color: #191919;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    background-color: #518651;
+    min-width: 400px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    background-color: #183b12;
+    padding: 5px 10px;
+}
+
+p {
+    text-align: center;
+}
+
+p a {
+    text-decoration: none;
+    color: #dddddd;
+}
+
+p a:first-child {
+    margin-right: 20px;
+}
