@@ -4,6 +4,7 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    text-shadow: 1px 1px 1px #000000;
 }
 
 #wrapper {
@@ -18,14 +19,15 @@ h1 {
     padding: 20px;
 }
 
-ul {
+ol {
     margin: 0;
     padding: 0;
 }
 
-ul li {
-    background-color: #183b12;
+ol li {
+    background-color: #183b12 !important;
     padding: 5px 10px;
+    list-style: decimal inside none;
 }
 
 p {
