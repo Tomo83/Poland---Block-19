@@ -12,11 +12,45 @@ body {
     min-width: 400px;
     max-width: 600px;
     margin: 20px auto;
+    border-radius: 10px 10px 0 0;
 }
 
 h1 {
     text-align: center;
     padding: 20px;
+}
+
+form {
+    font-size: 0;
+    width: 100%;
+    display: flex;
+}
+
+form input {
+    font-size: 16px;
+}
+
+#textfield::placeholder {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+#textfield {
+    background-color: #183b12;
+    color: #ffffff;
+    width: 80%;
+    border: 0;
+    padding: 10px 5px;
+}
+
+#button {
+    background-color: #0070ac;
+    color: #ffffff;
+    width: 20%;
+    border: 0;
+    padding: 10px 5px;
+    text-shadow: 1px 1px 1px #000000;
+    font-weight: bold;
 }
 
 ol {
@@ -28,17 +62,16 @@ ol li {
     background-color: #183b12 !important;
     padding: 5px 10px;
     list-style: decimal inside none;
+    margin: 5px 0;
 }
 
-p {
-    text-align: center;
+li span {
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
-p a {
+li a {
     text-decoration: none;
-    color: #dddddd;
-}
-
-p a:first-child {
-    margin-right: 20px;
+    color: #ff0000;
 }

@@ -1,24 +1,18 @@
-$(document).ready(function(){
-    var theList = document.getElementById('theList');
-    
-    $('#saveAll').click(function(e){
-        e.preventDefault();
-        localStorage.setItem('todoList', theList.innerHTML);
+$(document).ready(function () {
+    $('form').submit(function (evt) {
+        evt.preventDefault();
+    }); // Koniec funkcji submit.
+    $('#button').click(function () {
+        var $field = $('#textfield')
+        var fieldVal = $field.val();
+        if (fieldVal) {
+            $('#tasklist').append('<li>' + fieldVal + '<a href="#" class="remove-task"><span>x</span></a></li>');
+            $field.val('');
+        }
     });
-    
-    $('#clearAll').click(function(e){
+
+    $('#tasklist').on('click', '.remove-task', function (e) {
         e.preventDefault();
-        localStorage.clear();
-        location.reload();
+        $(this).parent('li').remove();
     });
-    
-    loadToDo();
-    
-    function loadToDo(){
-        if(localStorage.getItem('todoList')){
-                theList.innerHTML = localStorage.getItem('todoList');
-           }
-    }
-    
-    
 });
